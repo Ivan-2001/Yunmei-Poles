@@ -1,6 +1,11 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/fonts.css);
 
+.page-wrapper {
+  width: 1920px;
+  overflow-x: hidden;
+}
+
 .page {
   color: #fff;
   font-family: "Gilroy", Arial, sans-serif;
@@ -8,17 +13,19 @@
   font-style: normal;
   margin: 0 auto;
   padding: 0;
+  width: 100%;
+  max-width: 1920px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  width: 100vw;
 }
 
 .rectangle-intro {
   background: url(./images/rectangle.png);
 }
+
 .header {
   display: flex;
   padding: 35.31px 0 0 0;
@@ -96,6 +103,7 @@
   line-height: 0.97;
   margin: 0;
 }
+
 .intro__description {
   margin: 21px 0 49px 0;
 }
@@ -132,7 +140,7 @@
 }
 
 .products {
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   padding-bottom: 140px;
 }
@@ -176,4 +184,81 @@
 .products__image:nth-child(4) {
   grid-column: 3/4;
   grid-row: -3/-1;
+}
+
+.about-us {
+  background-color: #eff5fb;
+  padding: 137px 380px 170px;
+  text-align: center;
+}
+
+.about-us__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.25;
+  color: #282828;
+  max-width: 904px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about-us__descriptions {
+  margin: 5px 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+  color: #3a3a3a;
+}
+
+.about-us__cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 41px 0 73px;
+}
+
+.about-us__card {
+  display: flex;
+  flex-direction: column;
+  width: 23.104%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.about-us__card:nth-child(1) {
+  background-image: url(./images/card1.png);
+}
+
+.about-us__card:nth-child(2) {
+  background-image: url(./images/card2.png);
+}
+
+.about-us__card:nth-child(3) {
+  background-image: url(./images/card3.png);
+}
+
+.about-us__card:nth-child(4) {
+  background-image: url(./images/card4.png);
+}
+
+.about-us__card-heading {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.53;
+  max-width: 224px;
+  text-transform: uppercase;
+  color: #282828;
+  margin: 84px auto 0;
+}
+
+.about-us__card-description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+.about-us__button {
+  padding: 22px 30px;
 }
